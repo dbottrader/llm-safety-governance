@@ -1,0 +1,16 @@
+# Example calibration configuration (conceptual)
+sweep_name: basic_adversarial_v1
+datasets:
+  benign: ["creative_writing", "technical_qa", "casual_chat"]
+  adversarial: ["jailbreak_templates", "prompt_injection_variants", "roleplay_override"]
+features:
+  - entropy
+  - kl_divergence
+  - perplexity
+  - semantic_embedding_cosine
+threshold_sweep: [0.3, 0.5, 0.7, 0.9]
+metrics:
+  - recall
+  - false_positive_rate
+  - expected_calibration_error
+notes: "This config demonstrates the harness structure. Real sweeps use larger curated datasets and full feature pipelines."
