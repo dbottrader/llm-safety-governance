@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "LLM Safety Governance"
+authors:
+  - family-names: Christie
+    given-names: Dennis
+date-released: 2026-07-02
+license: CC0-1.0
+repository-code: "https://github.com/dbottrader/llm-safety-governance"
